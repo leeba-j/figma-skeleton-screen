@@ -1,0 +1,8 @@
+
+<button id="duplicate" onclick="duplicateFrame()">Duplicate</button>
+<script>
+const duplicateFrame = () => {
+  parent.postMessage({pluginMessage: {type: "duplicate-frame"}}, "*")
+}
+
+</script>
